@@ -1,0 +1,43 @@
+{
+  "name": "list",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && rollup -c rollup.config.mjs",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "start": "cross-env NODE_ENV=production node dist/server.js"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.8.2",
+    "@tailwindcss/vite": "4.0.0-alpha.8",
+    "cross-env": "^7.0.3",
+    "hono": "^4.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "4.0.0-alpha.8"
+  },
+  "devDependencies": {
+    "@hono/vite-dev-server": "^0.9.0",
+    "@hono/zod-validator": "^0.2.0",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^20.11.26",
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "glob": "^10.3.10",
+    "rollup": "^4.13.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.6",
+    "zod": "^3.22.4"
+  }
+}
